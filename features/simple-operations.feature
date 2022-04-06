@@ -19,4 +19,8 @@ Feature: The Forth interpreter shall understand basic operations
      When I execute "1 DUP . ."
      Then I should get "1 1 ok"
 
+       Scenario: Negation
+     When I execute "1 NEG ."
+     Then I should get "-1 ok"
+
 
